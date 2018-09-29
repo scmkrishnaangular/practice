@@ -34,4 +34,26 @@ let freturnValue = test();
 console.log("3. Function Retunr Value : " + freturnValue);
 
 
+let names = ["Ram", 'Sam', "Ravi"];
+
+console.log("Names in the arraay are  : " + names.length + " Second element " + names[2]);
+
+for(let xyz of names) {
+    console.log(" Name " + xyz);
+}
+
+
+// old type
+for(let i = 0 ; i < names.length; i++) {
+    console.log(" Name " + names [i] );
+}
+//true tupe array
+let studentinfo:[string,number,boolean,string ]=['kumar',100,true,'angular'];
+ for(let info of studentinfo)
+ {
+     console.log("info: "+info);
+ }
+
+
+
 // test commit
