@@ -1,8 +1,7 @@
 
 class person
 {
-    private personname;
-  
+    private personname;  
    persongender;
      personage: number;
      
