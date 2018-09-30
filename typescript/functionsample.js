@@ -48,6 +48,7 @@ sumvar5(100, 50);
 //console.log("with optionla parametter " + d);
 sumvar5("Fita", 50);
 //console.log("with optionla parametter " + d);
+//union
 function sumvar6(a, b) {
     if (b === void 0) { b = 10; }
     console.log("a is number" + typeof (a));
