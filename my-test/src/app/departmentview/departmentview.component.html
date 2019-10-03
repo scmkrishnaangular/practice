@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div clas="col-sm-12">
+          <div>
+            <button type="button" class="btn btn-md btn-success"  (click)="handleSort()">
+              Sort By Department Name</button>
+            <input type="button" class="btn btn-md btn-info" (click)="backClick()" value="Back"/>
+          </div>
+  
+          <table class="table">
+            <tr class="table-header">
+              <th>Department Name</th>
+              <th>Head</th>
+              <th>Hospital Name</th>
+              <th>contact Number</th>
+            </tr>
+            <tbody>
+              <tr *ngFor="let item of departmentlist | filter : hospitalName">
+                <td>{{item.departmentname}}</td>
+                <td>{{item.head}}</td>
+                <td>{{item.hospitalname}}</td>
+                <td>{{item.contactnumber}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>

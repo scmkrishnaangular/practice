@@ -1,0 +1,24 @@
+<kendo-autocomplete
+        #autocomplete
+        [data]="data"
+        [filterable]="true"
+        (filterChange)="handleFilter($event)"
+        [placeholder]="'e.g. Andorra'"
+    >
+    </kendo-autocomplete>
+
+
+    after filter
+
+    <kendo-autocomplete
+        #afterfilter
+        [data]="data"
+        [filterable]="true"
+        (filterChange)="handleFilter($event)"
+        [placeholder]="'e.g. Andorra'"
+        
+    >
+    </kendo-autocomplete>
+
+    <br>
+    {{selName}}

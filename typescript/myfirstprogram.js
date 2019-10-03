@@ -29,9 +29,10 @@ for (var _i = 0, names_1 = names; _i < names_1.length; _i++) {
 for (var i = 0; i < names.length; i++) {
     console.log(" Name " + names[i]);
 }
+//true tupe array
 var studentinfo = ['kumar', 100, true, 'angular'];
 for (var _a = 0, studentinfo_1 = studentinfo; _a < studentinfo_1.length; _a++) {
     var info = studentinfo_1[_a];
-    console.log("info" + info);
+    console.log("info: " + info);
 }
 // test commit

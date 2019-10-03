@@ -1,0 +1,43 @@
+<div class="container" >
+  <form [formGroup]="formData">
+      <form [formGroup]="formData.controls.registerInfo">
+          <div style="text-align: center"><span class="label">Register Form</span> </div> 
+          <div class="row">            
+                                  
+              <div class="col-md-12">                   
+                  <div class="row">
+                      <div class="col-md-6">
+                          <span class="lable">First Name</span>
+                          <input type="text" formControlName="firstName" class="form-control">
+                          <span class="lable">Middle Name</span>
+                          <input type="text" formControlName="middleName" class="form-control">
+                          <span class="lable">Last Name</span>
+                          <input type="text" formControlName="lastName" class="form-control">
+                          <span class="lable">User Id</span>
+                          <input type="text" formControlName="userId" appAlphanumberonly class="form-control">
+                          <span class="lable">Password</span>
+                          <input type="text" formControlName="passWord" class="form-control">
+                          <span class="lable">Email</span>
+                          <input type="text" formControlName="email" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                              <span class="lable">Address Line1</span>
+                              <input type="text" formControlName="addressLine1" class="form-control">
+                              <span class="lable">Address Line2</span>
+                              <input type="text" formControlName="addressLine2" class="form-control">
+                              <span class="lable">City</span>
+                              <input type="text" formControlName="city" class="form-control">
+                              <span class="lable">State</span>
+                              <select class="form-control" formControlName="state">
+                                <option>--Select--</option>
+                              </select>
+                              <span class="lable">Zip Code</span>
+                              <input type="text" formControlName="zipCode" appNumberonly class="form-control" maxlength="6">
+
+                      </div>                        
+                  </div>
+              </div>
+          </div>
+      </form>
+  </form>
+</div>

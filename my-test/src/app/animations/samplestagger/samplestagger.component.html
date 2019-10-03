@@ -1,0 +1,6 @@
+<button (click)="addURL()"> Add URL </button>
+<div [@imgAnimation]="imageURLs.length">
+  <div *ngFor="let imageurl of imageURLs">
+    <img [src]="imageurl" width="200px">
+  </div>
+</div>>

@@ -1,0 +1,15 @@
+<div>
+
+<app-sample1 [parentData]="totalAmount"></app-sample1>
+
+<hr>
+
+Student IDs : {{stdids}}
+
+<ol>
+  <li *ngFor="let id of stdids" > {{id}}</li>
+</ol>
+
+Add Id : <input type="text" (change)="addId($event)">
+
+</div>

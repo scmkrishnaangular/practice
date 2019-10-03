@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+      <div clas="col-sm-12">
+        <div>
+          <button type="button" class="btn btn-md btn-success" (click)="handleSortHospitalName()">Sort By Hospital Name</button>
+        </div>
+
+        <table class="table">
+          <tr class="table-header">
+            <th>Department Name</th>
+            <th>Contact No</th>
+            <th>View Department</th>
+          </tr>
+          <tbody>
+            <tr *ngFor="let item of hospitallist">
+              <td>{{item.hospitalname}}</td>
+              <td>{{item.contactnumber}}</td>
+              <td><a  [id]="item.hospitalname" routerLink="/departmentview"  [queryParams]="{hospitalname : item.hospitalname}" >View </a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>
